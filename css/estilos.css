@@ -1,0 +1,107 @@
+
+body{
+	background-color: #f3eae3;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFF;
+	border-radius: 10px;
+	width: 85%;
+	box-sizing: border-box;
+	margin: 2em 0;
+}
+
+.content__seccao{
+	display: flex;
+	flex-direction: column;
+}
+
+.content__seccao--imagem{
+	background-image: url(../images/image-product-mobile.jpg);
+	background-size: cover;
+	height: 220px;
+	border-radius: 10px 10px 0 0;
+}
+
+.content__seccao--texto{
+	padding: 1em 1.5em;
+}
+
+.content__seccao--small-title{
+	letter-spacing: .2em;
+	margin-bottom: 1em;
+}
+
+.content__seccao--big-title{
+	font-weight: bold;
+	font-size: 1.7em;
+	margin-bottom: .8em;
+	color: #1d222a;
+}
+
+.content__seccao--paragrafo{
+	line-height: 1.25em;
+	margin-bottom: 1em;
+}
+
+.preco{
+	display: flex;
+	align-items: center;
+	margin-bottom: .88em;
+}
+
+.preco .preco-grande{
+	margin: 0;
+	color: #3d8168;
+	margin-right: .7em;
+}
+
+.preco .preco-pequeno{
+	font-size: .8em;
+}
+
+.botao{
+	background-color: #3d8168;
+	border: none;
+	font-size: 1.1em;
+	border-radius: 5px;
+	padding: .4em 0;
+	color: #fff;
+	font-weight: 530;
+	background-image: url(../images/icon-cart.svg);
+	background-repeat: no-repeat;
+	background-position: 20% center;
+}
+.botao:hover{
+	background-color: #1a4031;
+	cursor: pointer;
+}
+
+@media (min-width: 1200px){
+	.content{
+		flex-direction: row;
+		width: 45%;
+		height: 400px;
+	}
+	.content__seccao{
+		width: 50%;
+		margin-top: 1.6em;
+		padding:  1em 2.5em;
+		justify-content: space-evenly;
+		box-sizing: border-box;
+	}
+	.content__seccao--imagem{
+		width: 50%;
+		height: 100%;
+		background-image: url(../images/image-product-desktop.jpg);
+		border-radius: 10px 0 0 10px;
+	}
+}
